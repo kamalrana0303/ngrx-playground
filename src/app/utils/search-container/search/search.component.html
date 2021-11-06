@@ -1,0 +1,7 @@
+<div [formGroup]="fg" fxLayout="row" fxLayoutAlign="center" fxFlex="100">
+    <mat-select fxFlex="30" [value]="value"  formControlName="scope" class="select">
+        <mat-option value="">All</mat-option>
+    </mat-select>
+    <mat-divider  [vertical]="true" class="divider"></mat-divider>
+    <input fxFlex="65" type="text" matInput formControlName="query">
+</div>

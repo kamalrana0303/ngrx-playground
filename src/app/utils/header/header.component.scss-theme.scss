@@ -1,0 +1,20 @@
+@mixin app-header-typography($config){
+    app-header{
+        
+        h1{
+            font-family: mat-font-family($config);
+            font-weight: mat-font-weight($config, title);
+            line-height: mat-line-height($config, title);
+            font-size: mat-font-size($config,title);
+         
+        }
+    }
+}
+
+@mixin app-header-theme($theme){
+    $background:map-get($theme, accent);
+
+    app-header{
+        background-color: #e0a22f;  
+    }
+}

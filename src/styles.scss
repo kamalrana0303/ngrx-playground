@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/theming";
+@import "../src/app/app.component.scss-theme.scss";
+@import "../src/app/utils/header/header.component.scss-theme.scss";
+@import "../src/app/utils/home-page-description/home-page-description.component.scss";
+@include mat-core();
+
+$custom-typography: mat-typography-config(
+    $font-family: 'Avenida',
+    $title: mat-typography-level(24px, 32px, bold)
+);
+
+$custom-typography-myriad-pro: mat-typography-config(
+    $font-family: 'Myriad Pro',
+    $title: mat-typography-level(24px, 10px, bold)
+);
+
+$mat-theming-primary: mat-palette($mat-deep-orange);
+$mat-theming-accent: mat-palette($mat-deep-orange,A200,A100,A400);
+$mat-theming-warn: mat-palette($mat-red);
+$mat-theming-theme: mat-light-theme($mat-theming-primary, $mat-theming-accent, $mat-theming-warn);
+@include angular-material-theme($mat-theming-theme);
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    background-color: mat-color(map-get($mat-theming-theme,primary), 100);
+    font-family: mat-font-family($custom-typography-myriad-pro);
+    font-weight: mat-font-weight($custom-typography-myriad-pro, title);
+    line-height: mat-line-height($custom-typography-myriad-pro, title);
+}
+
+// app-root
+//@include app-root-theme($mat-theming-theme);
+//@include app-root-typography($custom-typography-myriad-pro);
+
+//app-bar
+
+//app-header24
+@include app-header-typography(mat-typography-config($font-family: 'Helvetica', $title: mat-typography-level(18px,24px,bold)));
+@include app-header-theme(mat-light-theme(mat-palette($mat-yellow), mat-palette($mat-yellow,A200,A400,A700),mat-palette($mat-red)));
+
+//app-home-page-description
+@include app-home-page-description-typography($custom-typography);

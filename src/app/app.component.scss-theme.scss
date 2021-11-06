@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+
+@mixin app-root-theme($theme){
+    $background:map-get($theme, accent);
+    app-root{
+        background-color: mat-color($background, 50);
+    }
+}
+
+@mixin app-root-typography($config){
+    app-root{
+        h1{
+            @include mat-typography-level-to-styles($config,title);
+        }
+    }
+}

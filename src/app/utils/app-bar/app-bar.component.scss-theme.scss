@@ -1,0 +1,15 @@
+@import "~@angular/material/theming";
+
+
+
+
+@mixin app-bar-typography($config){
+    app-app-bar{
+        h1{
+            font-family: mat-font-family($custom-typography);
+            font-size: mat-font-size($custom-typography,title);
+            font-weight: mat-font-weight($custom-typography,title);
+            line-height: mat-line-height($custom-typography,title);
+        }
+    }
+}

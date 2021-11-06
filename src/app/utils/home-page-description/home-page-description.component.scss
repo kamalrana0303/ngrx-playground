@@ -1,0 +1,7 @@
+@mixin app-home-page-description-typography($config){
+    app-home-page-description{
+        h1{
+            @include mat-typography-level-to-styles($config,title);
+        }
+    }
+}
