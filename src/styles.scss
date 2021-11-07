@@ -1,8 +1,77 @@
 @import "~@angular/material/theming";
 @import "../src/app/app.component.scss-theme.scss";
 @import "../src/app/utils/header/header.component.scss-theme.scss";
-@import "../src/app/utils/home-page-description/home-page-description.component.scss";
+@import "../src/app/utils/home-page-description/home-page-description.scss-theme.scss";
+@import "../src/app/utils/skills-set/skills-sest.component.scss-theme.scss";
+@import "../src/app/home-page/home-page.component.scss-theme.scss";
 @include mat-core();
+
+$md-mcgblue: (
+    50 : #e4ebf7,
+    100 : #bbccec,
+    200 : #8eabe0,
+    300 : #6089d3,
+    400 : #3e6fc9,
+    500 : #1c56c0,
+    600 : #194fba,
+    700 : #1445b2,
+    800 : #113caa,
+    900 : #092b9c,
+    A100 : #c9d3ff,
+    A200 : #96aaff,
+    A400 : #6380ff,
+    A700 : #4a6bff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$md-mcggold: (
+    50 : #fbf4e6,
+    100 : #f6e3c1,
+    200 : #f0d197,
+    300 : #e9be6d,
+    400 : #e5b04e,
+    500 : #e0a22f,
+    600 : #dc9a2a,
+    700 : #d89023,
+    800 : #d3861d,
+    900 : #cb7512,
+    A100 : #fffcfa,
+    A200 : #ffe3c7,
+    A400 : #ffc994,
+    A700 : #ffbd7a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
 
 $custom-typography: mat-typography-config(
     $font-family: 'Avenida',
@@ -40,3 +109,9 @@ body {
 
 //app-home-page-description
 @include app-home-page-description-typography($custom-typography);
+$custom-button-theme:mat-light-theme(mat-palette($md-mcgblue), mat-palette($md-mcggold),mat-palette($mat-red));
+@include app-home-page-description-button-theme($custom-button-theme);
+
+@include skills-set-theme($custom-button-theme);
+@include skills-set-typography($custom-typography);
+@include home-page-theme($custom-button-theme);

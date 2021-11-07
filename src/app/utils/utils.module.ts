@@ -9,8 +9,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './header/header.component';
 import { WixBgMediaComponent } from './wix-bg-media/wix-bg-media.component';
 import { HomePageDescriptionComponent } from './home-page-description/home-page-description.component';
+import { HoverDirective } from './hover.directive';
+import { SkillsSetComponent } from './skills-set/skills-set.component';
 
-const declarations=[AppBarComponent, SearchContainerComponent, SearchComponent, HeaderComponent, WixBgMediaComponent, HomePageDescriptionComponent]
+const declarations=[AppBarComponent, SearchContainerComponent, SearchComponent, HeaderComponent, WixBgMediaComponent, HomePageDescriptionComponent, HoverDirective, SkillsSetComponent]
 
 const modules=[CommonModule,
     MatFormFieldModule,

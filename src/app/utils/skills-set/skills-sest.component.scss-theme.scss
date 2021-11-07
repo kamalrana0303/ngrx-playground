@@ -1,0 +1,22 @@
+@mixin skills-set-theme($theme){
+    app-skills-set{
+        $background: map-get($theme, accent );
+       
+        background-color: mat-color($background, 50);
+
+        .skills{
+            $color: map-get($theme, primary );
+            font-size: 35px;
+            color: mat-color($color, 900);
+            letter-spacing: 0.85em;
+        }
+
+    }
+}
+@mixin skills-set-typography($config){
+    app-skills-set{
+        font-family: mat-font-family($config);
+        font-weight: mat-font-weight($config, title);
+        line-height: mat-line-height($config, title);
+    }
+}

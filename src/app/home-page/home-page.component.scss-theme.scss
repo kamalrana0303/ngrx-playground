@@ -1,0 +1,8 @@
+@mixin home-page-theme($theme){
+    app-home-page{
+        .top_layer{
+            $background: map-get($theme, accent);
+            background-color: mat-color($background, 50);
+        }   
+    }
+}

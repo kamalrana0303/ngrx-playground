@@ -1,7 +1,6 @@
-@mixin app-home-page-description-typography($config){
-    app-home-page-description{
-        h1{
-            @include mat-typography-level-to-styles($config,title);
-        }
-    }
+
+button{
+    outline: 1px solid #fafafa;
+    border-radius: 15px;
+    padding: 0px 35px !important;
 }

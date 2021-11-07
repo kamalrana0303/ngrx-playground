@@ -1,8 +1,10 @@
 
 @mixin align-center{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+  
 }
 .parallax_wrapper{
     
@@ -19,7 +21,7 @@
         .parallax_layer{
             position:absolute;
             inset:0;
-            width:100vw;
+         //   width:100vw;
             @include align-center;
         }
         .mid_layer{
@@ -28,5 +30,11 @@
         .base_layer{
             transform: translateZ(-300px) scale(2)
         }
+        .top_layer{
+            justify-content: start;
+            align-items: center;
+           
+        }
+        
     }
 }
