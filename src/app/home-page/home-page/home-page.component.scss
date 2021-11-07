@@ -11,7 +11,7 @@
     height:100vh;
     overflow-x:hidden;
     overflow-y: auto;
-    perspective: 300px;
+    perspective: 600px;
     
     .parallax_group{
         position: relative;
@@ -28,7 +28,7 @@
             color: #fafafa;
         }
         .base_layer{
-            transform: translateZ(-300px) scale(2)
+            transform: translateZ(-600px) scale(2)
         }
         .top_layer{
             justify-content: start;

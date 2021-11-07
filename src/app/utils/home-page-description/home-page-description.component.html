@@ -1,29 +1,29 @@
-<div gdRows="6" gdColumns="1" style="place-content: center; text-align: center; letter-spacing: 0.5em;">
-    <h1 gdRow="1" gdColumn="1" style="font-size: 50px; font-weight: 300;">
+<div gdRows="6" gdColumns="1" style="place-content: center; text-align: center; letter-spacing: 0.5em;" >
+    <h1 gdRow="1" gdColumn="1" [ngStyle]="{'font-size':mobileView?'20px': '30px', 'font-weight': mobileView?'150':'300', 'letter-spacing':'0.3em'}">
         Kamal Mohan Singh Rana
     </h1>
-    <h1 gdRow="2" gdColumn="1" style="font-size: 30px; font-weight: 300;">
+    <h1 gdRow="2" gdColumn="1" [ngStyle]="{'font-size':mobileView?'20px': '30px', 'font-weight': mobileView?'150':'300', 'letter-spacing':'0.3em'}">
         Born on {{'03-03-1993'|date:'MMM, dd yyyy'}}
         
     </h1>
-    <h1 gdRow="3" gdColumn="1" style="font-size: 30px; font-weight: 300;">
+    <h1 gdRow="3" gdColumn="1" [ngStyle]="{'font-size':mobileView?'20px': '30px', 'font-weight': mobileView?'150':'300', 'letter-spacing':'0.3em'}">
         - USICT | GGSIPU -
         
     </h1>
-    <h1 gdRow="4" gdColumn="1" style="font-size: 30px; font-weight: 300;" >
+    <h1 gdRow="4" gdColumn="1" [ngStyle]="{'font-size':mobileView?'20px': '30px', 'font-weight': mobileView?'150':'300', 'letter-spacing':'0.3em'}" >
         - MCA (2018-2021) -
     </h1>
-    <h1 gdRow="5" gdColumn="1" style="font-size: 30px; font-weight: 300;">
+    <h1 gdRow="5" gdColumn="1" [ngStyle]="{'font-size':mobileView?'20px': '30px', 'font-weight': mobileView?'150':'300', 'letter-spacing':'0.3em'}">
         Full Stack Web Developer
     </h1>
-    <h1 gdRow="6" gdColumn="1" style="font-size: 30px; font-weight: 300;" >
+    <h1 gdRow="6" gdColumn="1" [ngStyle]="{'font-size':mobileView?'20px': '30px', 'font-weight': mobileView?'150':'300', 'letter-spacing':'0.3em'}"  >
         - Angular | Springboot -
         
     </h1>
 
-    <div fxLayout="row" fxLayoutAlign="space-between">
-        <button mat-raised-button color="primary" hover><h1 style="font-size: 30px; font-weight: 300;letter-spacing: 0.3em;" >Resume</h1></button>
-        <button mat-raised-button color="primary" hover><h1 style="font-size: 30px; font-weight: 300; letter-spacing: 0.3em;" >Profile</h1></button>
+    <div fxLayout="row" fxLayoutAlign.gt-md="space-between" fxLayoutGap.lt-md="10px">
+        <button mat-raised-button color="primary" hover><h1 [ngStyle]="{'font-size':mobileView?'15px': '30px', 'font-weight': mobileView?'150':'300', 'letter-spacing':'0.3em'}" >Resume</h1></button>
+        <button mat-raised-button color="primary" hover><h1 [ngStyle]="{'font-size':mobileView?'15px': '30px', 'font-weight': mobileView?'150':'300', 'letter-spacing':'0.3em'}">Profile</h1></button>
     </div>
     
 </div>
