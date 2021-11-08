@@ -6,9 +6,15 @@
 
         .skills{
             $color: map-get($theme, primary );
-            font-size: 35px;
-            color: mat-color($color, 900);
-            letter-spacing: 0.85em;
+            font-size: 15px;
+            color: mat-color($color, A100, 50);
+            letter-spacing: 0.2em;
+        }
+        .bg-skills{
+            $color: map-get($theme, primary );
+            background-color: mat-color($color, A100, 50);
+            border-radius: 50%;
+            
         }
 
     }

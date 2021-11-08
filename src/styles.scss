@@ -113,5 +113,5 @@ $custom-button-theme:mat-light-theme(mat-palette($md-mcgblue), mat-palette($md-m
 @include app-home-page-description-button-theme($custom-button-theme);
 
 @include skills-set-theme($custom-button-theme);
-@include skills-set-typography($custom-typography);
+@include skills-set-typography($custom-typography-myriad-pro);
 @include home-page-theme($custom-button-theme);
