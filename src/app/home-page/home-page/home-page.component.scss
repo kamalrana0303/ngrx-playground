@@ -6,7 +6,19 @@
     align-items: center;
   
 }
+.parallax_wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.host {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 .parallax_wrapper{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     
     height:100vh;
     overflow-x:hidden;
@@ -15,7 +27,7 @@
     
     .parallax_group{
         position: relative;
-        top:100px;
+        top:0px;
         height:100vh;
         transform-style: preserve-3d;
         .parallax_layer{

@@ -16,6 +16,11 @@
             border-radius: 50%;
             
         }
+        .required{
+            $color: map-get($theme, warn );
+            color: mat-color($color, 900, 50);
+            font-size: 15px;
+        }
 
     }
 }

@@ -9,6 +9,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { LoginEffect } from 'src/store/effects/login.effect';
 import { environment } from 'src/environments/environment';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { MatButtonModule, MatFormFieldModule, MatSidenavModule } from '@angular/material';
+import { FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -16,6 +18,10 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
   declarations: [UserLayoutComponent],
   imports: [
     CommonModule,
+    MatSidenavModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatButtonModule,
     UserLayoutRoutingModule,
     StoreModule.forFeature("reducers",reducers),
     EffectsModule.forFeature([LoginEffect]),

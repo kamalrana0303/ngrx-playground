@@ -1,5 +1,5 @@
 :host{
-    position: fixed;
+    position: sticky;
     top:0px;
     left: 0px;
     width: 100%;
@@ -8,4 +8,7 @@
 h1{
     text-align: center;
     color: #fafafa;
+}
+.afg{
+    font-family: normal normal normal 17px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
 }

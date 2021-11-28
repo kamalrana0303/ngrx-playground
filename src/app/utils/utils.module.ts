@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AppBarComponent } from './app-bar/app-bar.component';
 import { SearchContainerComponent } from './search-container/search-container.component';
 import { SearchComponent } from './search-container/search/search.component';
-import { MatButtonModule, MatDividerModule, MatFormFieldModule, MatIconModule, MatInputModule, MatSelectModule } from '@angular/material';
+import { MatButtonModule, MatDividerModule, MatFormFieldModule, MatIconModule, MatInputModule, MatSelectModule, MatToolbarModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './header/header.component';
@@ -23,7 +23,8 @@ const modules=[CommonModule,
     MatSelectModule,
     MatInputModule,
     FlexLayoutModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
     
 ]
 
